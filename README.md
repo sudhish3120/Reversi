@@ -7,5 +7,5 @@ Reversi, also called Othello, is a two player game that is played on a nxn board
 The first component of this program is the layout and setting-up rules for gameplay. This involves checking legality of moves, handling special cases, flipping tiles with each turn, calculating all possible moves and so on. 
 
 ## Computer player 
-The second component of this program is the generation of an algorithm that the computer can use to play against a human player (or another computer player). The computer player was programmed using a combination of the Game Tree algorithm and a composite scoring system. The scoring system outputs a number for each possible move on the board and it was built upon tactics used by professional players. 
+The second component of this program is the generation of an algorithm that the computer can use to play against a human player (or another computer player). The computer player was programmed using a combination of the Game Tree algorithm and a composite scoring system. The scoring system outputs a score for each possible move on the board with the highest score being the most desirable move. It was built upon tactics used by professional players. 
 
