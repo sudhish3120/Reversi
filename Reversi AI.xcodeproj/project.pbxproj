@@ -20,15 +20,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		624D713B2493161F00506B1D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		624D712A249314CA00506B1D /* Reversi AI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Reversi AI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624D712D249314CA00506B1D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		624D713D2493161F00506B1D /* Reversi - Two Player */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Reversi - Two Player"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		624D7127249314CA00506B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624D713A2493161F00506B1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				624D712A249314CA00506B1D /* Reversi AI */,
+				624D713D2493161F00506B1D /* Reversi - Two Player */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +100,23 @@
 			productReference = 624D712A249314CA00506B1D /* Reversi AI */;
 			productType = "com.apple.product-type.tool";
 		};
+		624D713C2493161F00506B1D /* Reversi - Two Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624D71412493161F00506B1D /* Build configuration list for PBXNativeTarget "Reversi - Two Player" */;
+			buildPhases = (
+				624D71392493161F00506B1D /* Sources */,
+				624D713A2493161F00506B1D /* Frameworks */,
+				624D713B2493161F00506B1D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reversi - Two Player";
+			productName = "Reversi - Two Player";
+			productReference = 624D713D2493161F00506B1D /* Reversi - Two Player */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +127,9 @@
 				ORGANIZATIONNAME = "Sudhish M";
 				TargetAttributes = {
 					624D7129249314CA00506B1D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					624D713C2493161F00506B1D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -110,6 +148,7 @@
 			projectRoot = "";
 			targets = (
 				624D7129249314CA00506B1D /* Reversi AI */,
+				624D713C2493161F00506B1D /* Reversi - Two Player */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +159,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				624D712E249314CA00506B1D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624D71392493161F00506B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +301,26 @@
 			};
 			name = Release;
 		};
+		624D71422493161F00506B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8H9Y56DGWB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		624D71432493161F00506B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8H9Y56DGWB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +338,15 @@
 			buildConfigurations = (
 				624D7132249314CA00506B1D /* Debug */,
 				624D7133249314CA00506B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624D71412493161F00506B1D /* Build configuration list for PBXNativeTarget "Reversi - Two Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624D71422493161F00506B1D /* Debug */,
+				624D71432493161F00506B1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
